@@ -1,18 +1,311 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+  ga('create', 'UA-48988275-1', 'auto');
+  ga('send', 'pageview');
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jacob Fliss - Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    
+    <link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!-- Custom Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Jacob Fliss - Portfolio</a> 
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#client_projects">Client Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#personal_projects">Personal Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>My Portfolio</h1>
+                <hr>
+                <p>C/C++, C#, VB.NET, Objective-C, Swift, Python, Java<br>
+              HTML, CSS, PHP, SQL, XML, Javascript, JSON, jQuery, Ajax</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Professional Software Development</h2>
+                    <hr class="light">
+                    <p class="text-faded">I make computers work for your business with my programming experience.</p>
+                    <a href="#contact" class="btn btn-default btn-xl page-scroll">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-connectdevelop wow bounceIn text-primary"></i>
+                        <h3>Debugging</h3>
+                        <p class="text-muted">Lots of different web and computer software debugged from many different developers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-flask wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>10+ Years</h3>
+                        <p class="text-muted">Since 2001 I have been programming! Learning more as I progress.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-leanpub wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Knowledgable</h3>
+                        <p class="text-muted">cURL, Process Read/Write, DLL Injection. Solving complex problems.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-beer wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Passionate</h3>
+                        <p class="text-muted">Programming every day. I make it my goal to finish projects accurately and fast.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <aside class="bg-dark" id="client_projects">
+        <div class="container text-left">
+        <h2 class="section-heading" style="text-align:center;">Client Projects</h2>
+        <hr class="primary">
+        
+            <div class="call-to-action" style="height:150px;">
+                <img src="img/portfolio/vrwesson_logo.png" class="img-responsive" alt="" style="float:left;margin-right:15px;height:115px;width:250px;box-shadow: 0px 0px 10px #fff;margin-top:25px;"><div style="float:left;max-width:800px;"><h3>VR/Wesson</h3>
+                I built the company website, and an employee portal. The employee portal lets employees enter jobs, get sales figures and check on a job's current status. The company is now ISO 9001 compliant so all documents and forms are done electronically. Database linking with MSSQL and MySQL with existing JobBOSS software.
+                  <div style="margin-top:10px;"><a href="http://vrwesson.com" target="_BLANK">vrwesson.com</a></div></div>
+            </div>
+            
+            <div class="call-to-action" style="height:150px;">
+                <img src="img/portfolio/evblinds_logo.png" class="img-responsive" alt="" style="float:left;margin-right:15px;height:115px;width:250px;box-shadow: 0px 0px 10px #fff;margin-top:25px;"><div style="float:left;max-width:800px;"><h3>EVblinds</h3>This website template came from another developer who started this project. I did many repairs to make it work again, and even did some cURL scraping on local directories to get mailing lists for this client.
+                <div style="margin-top:10px;"><a href="http://evblinds.com" target="_BLANK">evblinds.com</a></div></div>
+            </div>
+            
+            <div class="call-to-action" style="height:150px;">
+                <img src="img/portfolio/biomedic_thumb.jpg" class="img-responsive" alt="" style="float:left;margin-right:15px;height:115px;width:250px;box-shadow: 0px 0px 10px #fff;margin-top:25px;"><div style="float:left;max-width:800px;"><h3>BioMedic</h3>E-Commerce website had to be debugged. He was using custom Wordpress plugins to create the online store.
+                <div style="margin-top:10px;"><a href="https://www.biomediclaser.com/store.html" target="_BLANK">biomediclaser.com</a></div></div>
+            </div>
+            
+            <div class="call-to-action" style="height:150px;">
+                <img src="img/portfolio/mustardfactory_thumb.jpg" class="img-responsive" alt="" style="float:left;margin-right:15px;height:115px;width:250px;box-shadow: 0px 0px 10px #fff;margin-top:25px;"><div style="float:left;max-width:800px;"><h3>The Mustard Factory</h3>E-Commerce website had to be debugged. Was using x-cart with a custom theme. Several issues with the theme and the plugins he was using, but got it all fixed in less than 8 hours.
+                <div style="margin-top:10px;"><a href="http://www.the-mustard-factory.com/" target="_BLANK">the-mustard-factory.com</a></div></div>
+            </div>
+            
+            <div class="call-to-action" style="height:150px;">
+                <img src="img/portfolio/aedserver.jpg" class="img-responsive" alt="" style="float:left;margin-right:15px;height:115px;width:250px;box-shadow: 0px 0px 10px #fff;margin-top:25px;"><div style="float:left;max-width:800px;"><h3>AED Brands</h3>I was hired to do the PHP programming to accomidate an Android application that monitors heart issues. The developers were very surprised to see that I shrank 500+ lines of HTML to less than 20 with CSS and PHP.</div>
+            </div>
+            
+            <div class="call-to-action" style="height:150px;">
+                <img src="img/portfolio/premierrealty.jpg" class="img-responsive" alt="" style="float:left;margin-right:15px;height:115px;width:250px;box-shadow: 0px 0px 10px #fff;margin-top:25px;"><div style="float:left;max-width:800px;"><h3>Premier Realty</h3>Developed the company website in Wordpress, and programmed a custom Wordpress plugin to help pull data from a 3rd party realestate database (Rapattoni MLS).</div>
+            </div>
+            
+        </div>
+    </aside>
+    
+    <aside class="bg-dark" id="personal_projects">
+        <div class="container text-left">
+        <h2 class="section-heading" style="text-align:center;">Personal Projects</h2>
+        <hr class="primary">
+        <div style="text-align:center;padding-bottom:25px;"><a href="https://github.com/erfg12?tab=repositories" target="_BLANK">Click here to see my GitHub repo for other projects I have developed not listed here.</a></div>
+            <div class="call-to-action" style="height:240px;">
+                <a class="image" href="img/portfolio/newgroundsmobile_thumb.jpg" data-fancybox-group="newgrounds" title="NewGroundsMobile.com Screenshot"><img src="img/portfolio/newgroundsmobile_thumb.jpg" class="img-responsive" alt="" style="height:200px;width:250px;float:left;margin-right:15px;max-width:100%;box-shadow: 0px 0px 10px #fff;"></a><div style="float:left;max-width:800px;"><h3>Newgrounds Mobile</h3><p>I decided to take on this project myself to remotely grab data.</p><p>Web app uses PHP with cURL, Android app built in Java, Windows App built in C#, Kodi/XBMC Plugin built with Python, iOS app built with Swift 3.0<br>
+                <a href="http://newgroundsmobile.com" target="_BLANK" title="newgroundsmobile.com"><i class="fa fa-globe fa-3x wow bounceIn" data-wow-delay=".1s"></i></a> <a href="https://play.google.com/store/apps/details?id=com.newage.jake.mstreamer" target="_BLANK" title="Android App"><i class="fa fa-android fa-3x wow bounceIn" data-wow-delay=".1s"></i></a> <a href="https://itunes.apple.com/us/app/mstreaming-for-newgrounds/id1173923463?ls=1&mt=8" target="_BLANK" title="iOS App"><i class="fa fa-apple fa-3x wow bounceIn" data-wow-delay=".1s"></i></a> <a href="https://www.microsoft.com/en-us/store/apps/newgrounds/9nblggh5xr3x" target="_BLANK" title="Windows App"><i class="fa fa-windows fa-3x wow bounceIn" data-wow-delay=".1s"></i></a> <a href="http://addons.kodi.tv/show/plugin.program.newgrounds/" target="_BLANK" title="Kodi/XBMC Plugin"><i class="fa fa-linux fa-3x wow bounceIn" data-wow-delay=".1s"></i></a></p></div>
+            </div>
+			
+            <div class="call-to-action" style="height:240px;">
+                <a class="image" href="img/portfolio/bingrewards_full.jpg" data-fancybox-group="bing" title="BING Rewards Screenshot"><img src="img/portfolio/bingrewards_thumb.jpg" class="img-responsive" alt="" style="height:200px;width:250px;float:left;margin-right:15px;box-shadow: 0px 0px 10px #fff;"></a><div style="float:left;max-width:800px;"><h3>BING Rewards Bot</h3><p>BING the Microsoft search engine, wants people to use their services. But, chances are you won't remember to use it every day. This program emulates searches on BING to mine for rewards points.</p><p>Forms built in C#. Program uses the WebBrowser .NET control.<br>
+                <a href="https://newagesoldier.com/Bing-Rewards-Search-Bot" target="_BLANK" title="newagesoldier.com project page"><i class="fa fa-laptop fa-3x wow bounceIn" data-wow-delay=".1s"></i></a> <a href="https://www.youtube.com/watch?v=NwuETO30nkk" target="_BLANK" title="YouTube Video"><i class="fa fa-youtube fa-3x wow bounceIn" data-wow-delay=".1s"></i></a></p>
+            </div></div>
+			
+			<div class="call-to-action" style="height:240px;">
+                <a class="image" href="img/portfolio/sell-it.png" data-fancybox-group="sellit" title="SELL-IT Screenshot"><img src="img/portfolio/sell-it.png" class="img-responsive" alt="" style="height:200px;width:250px;float:left;margin-right:15px;box-shadow: 0px 0px 10px #fff;"></a><div style="float:left;max-width:800px;"><h3>Sell-It - Sell your PC easily!</h3><p>Written in C#, displays ALL the important information for selling a computer. Things like hard drive size/speed/type, processor speed, memory size/speed/type, etc. I had to use Microsoft's Bridge program to convert it to an appx for the Windows Store.<br>
+                <a href="https://www.microsoft.com/en-us/store/p/sell-it/9n6gk067d2mr?rtc=1" target="_BLANK" title="Windows Store Page"><i class="fa fa-windows fa-3x wow bounceIn" data-wow-delay=".1s"></i></a></p>
+            </div></div>
+            
+            <div class="call-to-action" style="height:240px;">
+                <a class="image" href="img/portfolio/netflix look-a-like full.png" data-fancybox-group="netflix" title="Netflix Look-a-Like Screenshot"><img src="img/portfolio/netflix look-a-like thumb.png" class="img-responsive" alt="" style="height:200px;width:250px;float:left;margin-right:15px;box-shadow: 0px 0px 10px #fff;"></a><div style="float:left;max-width:800px;"><h3>Netflix Look-a-Like / Web Media Center</h3><p>Clone of the netflix site. Lets you stream videos from your hard drives over the internet and gets information from imdb. Gathers data via cURL (PHP) from the IMDB website. Currently making a version 2 which uses SQLite with MovieDB instead of using cURL on IMDB.<br>
+                <a href="https://github.com/erfg12/netflix-look-a-like" target="_BLANK" title="newagesoldier.com project page"><i class="fa fa-github-square fa-3x wow bounceIn" data-wow-delay=".1s"></i></a> <a href="https://github.com/erfg12/web-media-center" target="_BLANK" title="newagesoldier.com project page"><i class="fa fa-github-square fa-3x wow bounceIn" data-wow-delay=".1s"></i></a></p></div>
+            </div>
+            
+            <div class="call-to-action" style="height:240px;">
+                <a class="image" href="img/portfolio/clanmod_full.jpg" data-fancybox-group="clanmod" title="Netflix Look-a-Like Screenshot"><img src="img/portfolio/clanmod_thumb.jpg" class="img-responsive" alt="" style="height:200px;width:250px;float:left;margin-right:15px;box-shadow: 0px 0px 10px #fff;"></a><div style="float:left;max-width:800px;"><h3>Clan Mod</h3><p>An early C/C++ project I worked on in 2005. It is really just a video game modification that gives over 1000 new functions to an older game. Was used by several game hosting companies.</p><p>Built using VS.NET for Windows, Parallel Studio for Linux and Xcode for Mac. Written in C.<br>
+                <a href="https://newagesoldier.com/clanmod/" target="_BLANK" title="newagesoldier.com project page"><i class="fa fa-laptop fa-3x wow bounceIn" data-wow-delay=".1s"></i></a></p></div>
+            </div>
+			
+			<div class="call-to-action" style="height:240px;">
+                <a class="image" href="img/portfolio/game_save_backup.jpg" data-fancybox-group="gsavebackup" title="Game Save Backup Screenshot"><img src="img/portfolio/game_save_backup.jpg" class="img-responsive" alt="" style="height:200px;width:250px;float:left;margin-right:15px;box-shadow: 0px 0px 10px #fff;"></a><div style="float:left;max-width:800px;"><h3>Game Save Backup</h3>Built in C# with GoogleDrive, DropBox and OneDrive APIs, and FTP, process reading, file/folder/registry zip and backup.<br><br>This software detects where Steam is installed by reading the system registries. Then, it reads the configuration file to find all the Steam content libraries. After that, it searches the content libraries for directories for supported games. It does this regularly to detect if new games are installed.<br>
+                <a href="https://newagesoldier.com/clanmod/" target="_BLANK" title="newagesoldier.com project page"><i class="fa fa-laptop fa-3x wow bounceIn" data-wow-delay=".1s"></i></a></p></div>
+            </div>
+            
+            <div class="call-to-action" style="height:240px;">
+                <a class="image" href="img/portfolio/memory.png" data-fancybox-group="eqt" title="memory.dll"><img src="img/portfolio/memory_thumb.png" class="img-responsive" alt="" style="height:200px;width:250px;float:left;margin-right:15px;box-shadow: 0px 0px 10px #fff;"></a><div style="float:left;max-width:800px;"><h3>Memory.dll</h3><p>Built in C# this external library file has lots of great features for other developers. Read/write addresses in a program's process, find addresses either by base addresss, address+offsets, static addresses and even by byte array! It can inject DLL files and use NamedPipes to communicate to and from the other program. Even process addresses through an external ini file.<br>
+				<div style="float:left;margin-right:5px;"><a class="image" href="img/portfolio/eqt1.jpg" data-fancybox-group="eqt" title="EQTrainer Screenshot 2"><img src="img/portfolio/eqt1.jpg" style="width:50px;height:50px;"></a></div> 
+                <div style="float:left;margin-right:5px;"><a class="image" href="img/portfolio/eqt2.jpg" data-fancybox-group="eqt" title="EQTrainer Screenshot 3"><img src="img/portfolio/eqt2.jpg" style="width:50px;height:50px;"></a></div> 
+                <div style="float:left;margin-right:5px;"><a class="image" href="img/portfolio/eqt3.jpg" data-fancybox-group="eqt" title="EQTrainer Screenshot 4"><img src="img/portfolio/eqt3.jpg" style="width:50px;height:50px;"></a></div> 
+                <div style="float:left;margin-right:15px;"><a class="image" href="img/portfolio/eqt4.jpg" data-fancybox-group="eqt" title="EQTrainer Screenshot 5"><img src="img/portfolio/eqt4.jpg" style="width:50px;height:50px;"></a></div> 
+                
+                
+                <a href="https://erfg12.github.io/memory.dll/" target="_BLANK" title="website"><i class="fa fa-globe fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
+                <a href="https://github.com/erfg12/memory.dll" target="_BLANK" title="github.com project page"><i class="fa fa-github-square fa-3x wow bounceIn" data-wow-delay=".1s"></i></a><a href="https://newagesoldier.com/eqtrainer" target="_BLANK" title="newagesoldier.com project page"><i class="fa fa-laptop fa-3x wow bounceIn" data-wow-delay=".1s"></i></a> <a href="https://www.youtube.com/watch?v=LF94oOMBQP8" target="_BLANK" title="YouTube Video"><i class="fa fa-youtube fa-3x wow bounceIn" data-wow-delay=".1s"></i></a> </p></div>
+            </div>
+            
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">                    
+                    <div style="padding:10px;height:170px;max-width:500px;margin-left:auto;margin-right:auto;margin-bottom:30px;">
+                    
+                    <div style="float:left;"><img src="img/portfolio_picture.jpg" style="height:150px;width:150px;margin-right:20px;" /></div><div><h2 class="section-heading">Let's Get In Touch!</h2><hr class="primary"><div style="text-align:center;">Ready to start your next project?</div></div>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>(904) 834-1530</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:jake@newagesoftware.net">jake@newagesoftware.net</a></p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-github-square fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="https://github.com/erfg12">github.com/erfg12</a></p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-twitter-square fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="https://twitter.com/erfg12">twitter.com/erfg12</a></p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-facebook-square fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="https://www.facebook.com/NewAgeProgrammer">facebook.com/NewAgeProgrammer</a></p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-skype fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="skype:erfg12?call">erfg12</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    
+    <script src="js/jquery.fancybox.js?v=2.1.5"></script>
+    
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+			$('.image').fancybox({
+				helpers: {
+					overlay: {
+						locked: false
+					}
+				}
+			});
+		});
+	</script>
+
+</body>
+
+</html>
